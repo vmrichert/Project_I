@@ -87,7 +87,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-C:\Users\dakot\OneDrive\Desktop\Project_I\Diagrams
+![image](https://user-images.githubusercontent.com/85845830/122649997-210d8b00-d0f6-11eb-87a3-396f99c64efc.png)
 
 The playbook is duplicated below.
 
