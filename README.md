@@ -2,11 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Network diagram.PNG
+![image](https://user-images.githubusercontent.com/85845830/122649733-e8b97d00-d0f4-11eb-9a55-0363ede89a05.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yml** and **cfg** file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml and cfg file may be used to install only certain pieces of it, such as Filebeat.
 
-  - C:\Users\dakot\OneDrive\Desktop\Project_I
 
 This document contains the following details:
 - Description of the Topology
@@ -22,18 +21,17 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network.
-- What aspect of security do load balancers protect? The load balancers ensures that incoming traffic will be shared by both web servers. Sharing the workload between the three web servers will increase availability.
+- The load balancers ensures that incoming traffic will be shared by both web servers. Sharing the workload between the three web servers will increase availability.
 
-- What is the advantage of a jump box? The jump box serves as a gateway and will ensure that only authorized users will be able to connect. It is the only one exposed to the public network so it restricts the public access to only one system.
+-  The jump box serves as a gateway and will ensure that only authorized users will be able to connect. It is the only one exposed to the public network so it restricts the public access to only one system.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network, and system metrics.
 
-- What does Filebeat watch for? Filebeat detects changes to the filesystem. Specifically, we use it to collect Apache logs.
+- Filebeat detects changes to the filesystem. Specifically, we use it to collect Apache logs.
 
--  What does Metricbeat record? Metric beat detects changes in system metrics, such as CPU usage, attempted SSH logins, sudo escaltion failures, etc.
+- Metric beat detects changes in system metrics, such as CPU usage, attempted SSH logins, sudo escaltion failures, etc.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name        | Function    | IP Address   | Operating System |
 |-------------|-------------|--------------|------------------|
@@ -57,9 +55,8 @@ Only the jump box machine can accept connections from the Internet. Access to th
 
 Machines within the network can only be accessed by each other.
 
-- Which machine did you allow to access your ELK VM? Web-1, Web-2 and Web-3 send traffic to the Elk server. It also allows TCP traffic from port 5601.
+- Web-1, Web-2 and Web-3 send traffic to the Elk server. It also allows TCP traffic from port 5601.
 
-What was its IP address?
 	Web-1 10.0.0.5
 	Web-2 10.0.0.6
 	Web-3 10.0.0.7
